@@ -1,0 +1,14 @@
+C:\6thsem\netcentric\ConsoleAp\obj\Debug\net8.0\ConsoleAp.GeneratedMSBuildEditorConfig.editorconfig
+C:\6thsem\netcentric\ConsoleAp\obj\Debug\net8.0\ConsoleAp.AssemblyInfoInputs.cache
+C:\6thsem\netcentric\ConsoleAp\obj\Debug\net8.0\ConsoleAp.AssemblyInfo.cs
+C:\6thsem\netcentric\ConsoleAp\obj\Debug\net8.0\ConsoleAp.csproj.CoreCompileInputs.cache
+C:\6thsem\netcentric\ConsoleAp\bin\Debug\net8.0\ConsoleAp.exe
+C:\6thsem\netcentric\ConsoleAp\bin\Debug\net8.0\ConsoleAp.deps.json
+C:\6thsem\netcentric\ConsoleAp\bin\Debug\net8.0\ConsoleAp.runtimeconfig.json
+C:\6thsem\netcentric\ConsoleAp\bin\Debug\net8.0\ConsoleAp.dll
+C:\6thsem\netcentric\ConsoleAp\bin\Debug\net8.0\ConsoleAp.pdb
+C:\6thsem\netcentric\ConsoleAp\obj\Debug\net8.0\ConsoleAp.dll
+C:\6thsem\netcentric\ConsoleAp\obj\Debug\net8.0\refint\ConsoleAp.dll
+C:\6thsem\netcentric\ConsoleAp\obj\Debug\net8.0\ConsoleAp.pdb
+C:\6thsem\netcentric\ConsoleAp\obj\Debug\net8.0\ConsoleAp.genruntimeconfig.cache
+C:\6thsem\netcentric\ConsoleAp\obj\Debug\net8.0\ref\ConsoleAp.dll
