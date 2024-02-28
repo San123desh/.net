@@ -12,3 +12,4 @@ C:\6thsem\netcentric\ConsoleAp\obj\Debug\net8.0\refint\ConsoleAp.dll
 C:\6thsem\netcentric\ConsoleAp\obj\Debug\net8.0\ConsoleAp.pdb
 C:\6thsem\netcentric\ConsoleAp\obj\Debug\net8.0\ConsoleAp.genruntimeconfig.cache
 C:\6thsem\netcentric\ConsoleAp\obj\Debug\net8.0\ref\ConsoleAp.dll
+C:\6thsem\netcentric\ConsoleAp\obj\Debug\net8.0\ConsoleAp.sourcelink.json

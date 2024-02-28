@@ -1,17 +1,27 @@
 using System;
+class DataTypes
+{
+    public void LearnTypes()
+    {
+        Console.WriteLine("Hello, World!");
+        // c# is ool and strongly typed lang/static
+        byte num = 255;
+        // ushort for only positive num
+        ushort nostd = 3260;
+        int crowd = 0934875089;
+        long distance = 987698234982342;
+        float x = 2.1436587f;
+        double a = 422424.244223;
+        decimal y = 345334534.534536435m;
 
-class Helpers{
-    // method overloading
-    void Print(){
-        console.WriteLine("Ola!");
-    }
-    void Print(string greeting){
-        console.WriteLine(greeting);
-    }
+        // Text
+        char name = 'O';
+        string order = "kanchana kanchana";
 
-    float CalculateBMIT(float heightInFt,float weightInkg){
-        float heightInFt = heightInFt / 3.14f;
-        float bmi = weightInkg/(heightInFt*heightInFt);
-        return bmi;
+        bool isMale = true;
+
+        DateTime dob = DateTime.Now;
+
+        Console.WriteLine(dob);
     }
 }
