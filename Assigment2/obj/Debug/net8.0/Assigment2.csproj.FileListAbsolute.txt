@@ -1,0 +1,15 @@
+C:\6thsem\netcentric\Assigment2\obj\Debug\net8.0\Assigment2.GeneratedMSBuildEditorConfig.editorconfig
+C:\6thsem\netcentric\Assigment2\obj\Debug\net8.0\Assigment2.AssemblyInfoInputs.cache
+C:\6thsem\netcentric\Assigment2\obj\Debug\net8.0\Assigment2.AssemblyInfo.cs
+C:\6thsem\netcentric\Assigment2\obj\Debug\net8.0\Assigment2.csproj.CoreCompileInputs.cache
+C:\6thsem\netcentric\Assigment2\obj\Debug\net8.0\Assigment2.sourcelink.json
+C:\6thsem\netcentric\Assigment2\bin\Debug\net8.0\Assigment2.exe
+C:\6thsem\netcentric\Assigment2\bin\Debug\net8.0\Assigment2.deps.json
+C:\6thsem\netcentric\Assigment2\bin\Debug\net8.0\Assigment2.runtimeconfig.json
+C:\6thsem\netcentric\Assigment2\bin\Debug\net8.0\Assigment2.dll
+C:\6thsem\netcentric\Assigment2\bin\Debug\net8.0\Assigment2.pdb
+C:\6thsem\netcentric\Assigment2\obj\Debug\net8.0\Assigment2.dll
+C:\6thsem\netcentric\Assigment2\obj\Debug\net8.0\refint\Assigment2.dll
+C:\6thsem\netcentric\Assigment2\obj\Debug\net8.0\Assigment2.pdb
+C:\6thsem\netcentric\Assigment2\obj\Debug\net8.0\Assigment2.genruntimeconfig.cache
+C:\6thsem\netcentric\Assigment2\obj\Debug\net8.0\ref\Assigment2.dll
