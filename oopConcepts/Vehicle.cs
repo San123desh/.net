@@ -2,9 +2,15 @@ public abstract class Vehicle
 {
     public int VIN {get;}
     public string Brand { get; set;}
-    public string Model { get; set; }
+    string model;
+    
+    public string Model
+    {
+        get { return model; }
+        set {model = value; }
 
-    // protected string EngineType;
+    }
+
     public Vehicle(int vin,string brand ,string model)
     {
         VIN = vin;

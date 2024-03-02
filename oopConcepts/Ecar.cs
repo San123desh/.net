@@ -16,6 +16,5 @@ class ElectricCar:Car
         var details = base.DisplayInfo();
         details += $"\nBattery capacity: {BatteryCapacity} kwh";
         return details;
-        // Console.WriteLine(details);
     }
 }
