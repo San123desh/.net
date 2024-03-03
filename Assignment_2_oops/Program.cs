@@ -1,4 +1,5 @@
 ﻿var car = new Car(1234,"TOYOTA","Hilux",2020);
+car.SetFuelEfficiency(40);
 Console.WriteLine(car.DisplayInfo());
 
 Console.WriteLine("----------------------------------");
