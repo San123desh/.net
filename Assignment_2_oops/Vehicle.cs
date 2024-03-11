@@ -2,7 +2,7 @@ public abstract class Vehicle
 {
     public int VIN {get;}
     public string Brand { get; set;}
-    string model;
+    string model = string.Empty;
     public string Model
     {
         get { return model; }

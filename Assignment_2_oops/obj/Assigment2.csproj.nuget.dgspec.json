@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\6thsem\\netcentric\\oopConcepts\\Assigment2.csproj": {}
+    "C:\\6thsem\\netcentric\\Assignment_2_oops\\Assigment2.csproj": {}
   },
   "projects": {
-    "C:\\6thsem\\netcentric\\oopConcepts\\Assigment2.csproj": {
+    "C:\\6thsem\\netcentric\\Assignment_2_oops\\Assigment2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\6thsem\\netcentric\\oopConcepts\\Assigment2.csproj",
+        "projectUniqueName": "C:\\6thsem\\netcentric\\Assignment_2_oops\\Assigment2.csproj",
         "projectName": "Assigment2",
-        "projectPath": "C:\\6thsem\\netcentric\\oopConcepts\\Assigment2.csproj",
+        "projectPath": "C:\\6thsem\\netcentric\\Assignment_2_oops\\Assigment2.csproj",
         "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\6thsem\\netcentric\\oopConcepts\\obj\\",
+        "outputPath": "C:\\6thsem\\netcentric\\Assignment_2_oops\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -19,6 +19,7 @@ class Car : Vehicle, IFuelEfficient
         details += $"\nReleased Year:{ProducedYear}\nFuel Efficiency:{fuelEfficiency} Km/l";
         return details;
     }
+    
 }
 
 
