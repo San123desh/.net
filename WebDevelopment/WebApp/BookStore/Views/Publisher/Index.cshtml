@@ -1,0 +1,24 @@
+@model List<Publisher>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Established</th>
+            <th scope="col">Phone</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var publisher in Model)
+        {
+            <tr>
+                <th scope="row">@publisher.Id</th>
+                <td>@author.Name</td>
+                <td>@author.Address</td>
+                <td>@author.Established</td>
+                <td>@author.Phone</td>
+            </tr>
+        }
+    </tbody>
+</table>
