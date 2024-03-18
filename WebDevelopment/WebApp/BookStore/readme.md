@@ -20,8 +20,9 @@
 - Publisher(Id,Name, Address, Established, Phone)
 
 
+inside -> Bookstore -> dotnet tool install(update) dotnet-ef --global
 
-
+check installation -> dotnet-ef
 
 
 

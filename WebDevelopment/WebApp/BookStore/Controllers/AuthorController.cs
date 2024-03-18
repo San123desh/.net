@@ -1,4 +1,8 @@
+// # THIS namespace for base class/
+using BookStore.Data.Models;
+// related class at related namespace, ambiguous removing
 using Microsoft.AspNetCore.Mvc;
+
 public class AuthorController:Controller
 {
     public IActionResult Index()
@@ -11,7 +15,7 @@ public class AuthorController:Controller
         Author x2 = new() {Id = 2, Name = "riz"};
         // List<Author> authors = [a1,a2,a3,a4];
         List<Author> authors = [x1,x2];
-        return View();
+        return View(authors);
     }
 
 }

@@ -1,0 +1,15 @@
+C:\6thsem\netcentric\Assignment_3\obj\Debug\net8.0\Assignment_3.GeneratedMSBuildEditorConfig.editorconfig
+C:\6thsem\netcentric\Assignment_3\obj\Debug\net8.0\Assignment_3.AssemblyInfoInputs.cache
+C:\6thsem\netcentric\Assignment_3\obj\Debug\net8.0\Assignment_3.AssemblyInfo.cs
+C:\6thsem\netcentric\Assignment_3\obj\Debug\net8.0\Assignment_3.csproj.CoreCompileInputs.cache
+C:\6thsem\netcentric\Assignment_3\obj\Debug\net8.0\Assignment_3.sourcelink.json
+C:\6thsem\netcentric\Assignment_3\bin\Debug\net8.0\Assignment_3.exe
+C:\6thsem\netcentric\Assignment_3\bin\Debug\net8.0\Assignment_3.deps.json
+C:\6thsem\netcentric\Assignment_3\bin\Debug\net8.0\Assignment_3.runtimeconfig.json
+C:\6thsem\netcentric\Assignment_3\bin\Debug\net8.0\Assignment_3.dll
+C:\6thsem\netcentric\Assignment_3\bin\Debug\net8.0\Assignment_3.pdb
+C:\6thsem\netcentric\Assignment_3\obj\Debug\net8.0\Assignment_3.dll
+C:\6thsem\netcentric\Assignment_3\obj\Debug\net8.0\refint\Assignment_3.dll
+C:\6thsem\netcentric\Assignment_3\obj\Debug\net8.0\Assignment_3.pdb
+C:\6thsem\netcentric\Assignment_3\obj\Debug\net8.0\Assignment_3.genruntimeconfig.cache
+C:\6thsem\netcentric\Assignment_3\obj\Debug\net8.0\ref\Assignment_3.dll
