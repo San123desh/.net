@@ -25,6 +25,10 @@ inside -> Bookstore -> dotnet tool install(update) dotnet-ef --global
 check installation -> dotnet-ef
 
 
+ # Task March 19
+ - Add Edit and Delete BUTTON in every row for Author-> iNDEX FILE
+
+
 
 
 

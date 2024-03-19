@@ -1,6 +1,6 @@
-@using BookStore.Data.Models;
+@* @using BookStore.Data.Models; //already exists in viewImports *@
 @model List<Author>
-
+<a href="/author/add" class="btn btn-success">Add Author</a>
 <h2>Author HomePage</h2>
 <table class="table">
     <thead>
@@ -11,6 +11,7 @@
             <th scope="col">Gender</th>
             <th scope="col">Email</th>
             <th scope="col">Date of Birth</th>
+            <th scope="col">Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -24,7 +25,11 @@
                     <td>@author.Address</td>
                     <td>@author.Gender</td>
                     <td>@author.Email</td>
-                    <td>@author.Dob</td>
+                    <td>@author.Dob.ToLongDateString()</td>
+                    <td>
+                        <a href="/author/edit/@author.Id" class="btn btn-primary">Edit</a>
+                        <a href="/author/delete/@author.Id" class="btn btn-danger">Delete</a>
+                    </td>
                 </tr>
             }
         }
@@ -34,16 +39,5 @@
                 <td colspan="6">No authors found.</td>
             </tr>
         }
-        @* @foreach (var author in Model)
-        {
-        <tr>
-        <th scope="row">@author.Id</th>
-        <td>@author.Name</td>
-        <td>@author.Address</td>
-        <td>@author.Gender</td>
-        <td>@author.Email</td>
-        <td>@author.Dob</td>
-        </tr>
-        } *@
     </tbody>
 </table>

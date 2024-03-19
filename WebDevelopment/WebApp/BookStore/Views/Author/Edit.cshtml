@@ -1,0 +1,29 @@
+@model Author
+<h4 class="text-center">Edit Author Registration</h4>
+<form action="/author/edit" method="post">
+  <div class="mb-3">
+    <label  class="form-label">Name</label>
+    <input asp-for="Name" type="text" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label  class="form-label">Address</label>
+    <input asp-for="Address" type="text" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label  class="form-label">Email</label>
+    <input asp-for="Email" type="email" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label  class="form-label">Gender</label>
+    <input asp-for="Gender" type="text" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label  class="form-label">DOB</label>
+    <input asp-for="Dob" type="date" class="form-control">
+  </div>
+
+  @* This will be used to identify the specific author to update *@
+  <input type="hidden" asp-for="Id" />
+
+  <button type="submit" class="btn btn-primary">Save Update</button>
+</form>
