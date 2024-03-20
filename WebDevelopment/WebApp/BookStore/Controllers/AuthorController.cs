@@ -34,6 +34,7 @@ public class AuthorController:Controller
     public IActionResult Edit(int Id){
         BookStoreDb db = new BookStoreDb();
         Author? authors = db.Authors.Find(Id);
+        
         // View(authors)->helps to populate the form while editing
         return View(authors);
     }
@@ -46,11 +47,23 @@ public class AuthorController:Controller
         db.SaveChanges();
         return RedirectToAction("Index");
     }
-    public IActionResult Delete(int Id)
-    {
+    // public IActionResult Delete(int Id)
+    // {
+    //     BookStoreDb db = new BookStoreDb();
+    //     Author? author = db.Authors.Find(Id);
+    //     if(author != null){
+    //         db.Authors.Remove(author);
+    //         db.SaveChanges();
+    //     }
+    //     return RedirectToAction("Index");
+    // }
+
+     public IActionResult Delete(int Id){
         BookStoreDb db = new BookStoreDb();
-        Author? author = db.Authors.Find(Id);
-        return View();
+        Author? authors = db.Authors.Find(Id);
+        
+        // View(authors)->helps to populate the form while editing
+        return View(authors);
     }
 
     [HttpPost]

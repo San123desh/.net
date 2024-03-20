@@ -7,7 +7,7 @@ public class Author
 
     public string? Address { get; set; }
 
-    public char Gender { get; set; }
+    public Gender Gender { get; set; }
 
     public string? Email { get; set; }
 

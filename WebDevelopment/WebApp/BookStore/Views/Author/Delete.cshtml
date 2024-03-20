@@ -1,9 +1,8 @@
 @model Author
-<h4 class="text-center">Edit Author Registration</h4>
 
-<input type="hidden" asp-for="Id" />
-
-
-
-
-
+<h4 class="text-danger">Are you sure to delete data for @Model.Name?</h4>
+<form action="/author/delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a href="index" class="btn btn-success">Cancel</a>
+</form>

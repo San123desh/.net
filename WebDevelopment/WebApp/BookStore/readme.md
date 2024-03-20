@@ -30,6 +30,8 @@ check installation -> dotnet-ef
 
 
 
+dotnet ef migrations add AuthorGender -> for updating database->use dotnet ef database update before
+
 
 
 

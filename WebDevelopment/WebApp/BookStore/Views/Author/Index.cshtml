@@ -19,7 +19,7 @@
         {
             @foreach (var author in Model)
             {
-                <tr> 
+                <tr>
                     <th scope="row">@author.Id</th>
                     <td>@author.Name</td>
                     <td>@author.Address</td>
@@ -27,8 +27,10 @@
                     <td>@author.Email</td>
                     <td>@author.Dob.ToLongDateString()</td>
                     <td>
-                        <a href="/author/edit/@author.Id" class="btn btn-primary">Edit</a>
-                        <a href="/author/delete/@author.Id" class="btn btn-danger">Delete</a>
+                        <a href="/author/edit/@author.Id"><i class="bi bi-pen-fill text-warning"
+                                title="Edit"></i></a>
+                        <a href="/author/delete/@author.Id"><i class="bi bi-trash3-fill text-danger"
+                                title="Delete"></i></a>
                     </td>
                 </tr>
             }
