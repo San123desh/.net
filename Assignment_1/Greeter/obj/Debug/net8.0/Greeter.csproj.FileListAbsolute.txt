@@ -1,0 +1,15 @@
+C:\6thsem\netcentric\Assignment_1\Greeter\obj\Debug\net8.0\Greeter.GeneratedMSBuildEditorConfig.editorconfig
+C:\6thsem\netcentric\Assignment_1\Greeter\obj\Debug\net8.0\Greeter.AssemblyInfoInputs.cache
+C:\6thsem\netcentric\Assignment_1\Greeter\obj\Debug\net8.0\Greeter.AssemblyInfo.cs
+C:\6thsem\netcentric\Assignment_1\Greeter\obj\Debug\net8.0\Greeter.csproj.CoreCompileInputs.cache
+C:\6thsem\netcentric\Assignment_1\Greeter\obj\Debug\net8.0\Greeter.sourcelink.json
+C:\6thsem\netcentric\Assignment_1\Greeter\bin\Debug\net8.0\Greeter.exe
+C:\6thsem\netcentric\Assignment_1\Greeter\bin\Debug\net8.0\Greeter.deps.json
+C:\6thsem\netcentric\Assignment_1\Greeter\bin\Debug\net8.0\Greeter.runtimeconfig.json
+C:\6thsem\netcentric\Assignment_1\Greeter\bin\Debug\net8.0\Greeter.dll
+C:\6thsem\netcentric\Assignment_1\Greeter\bin\Debug\net8.0\Greeter.pdb
+C:\6thsem\netcentric\Assignment_1\Greeter\obj\Debug\net8.0\Greeter.dll
+C:\6thsem\netcentric\Assignment_1\Greeter\obj\Debug\net8.0\refint\Greeter.dll
+C:\6thsem\netcentric\Assignment_1\Greeter\obj\Debug\net8.0\Greeter.pdb
+C:\6thsem\netcentric\Assignment_1\Greeter\obj\Debug\net8.0\Greeter.genruntimeconfig.cache
+C:\6thsem\netcentric\Assignment_1\Greeter\obj\Debug\net8.0\ref\Greeter.dll

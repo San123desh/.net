@@ -1,5 +1,0 @@
-C:\6thsem\netcentric\Assignment_1\obj\Debug\net8.0\Assignment_1.GeneratedMSBuildEditorConfig.editorconfig
-C:\6thsem\netcentric\Assignment_1\obj\Debug\net8.0\Assignment_1.AssemblyInfoInputs.cache
-C:\6thsem\netcentric\Assignment_1\obj\Debug\net8.0\Assignment_1.AssemblyInfo.cs
-C:\6thsem\netcentric\Assignment_1\obj\Debug\net8.0\Assignment_1.csproj.CoreCompileInputs.cache
-C:\6thsem\netcentric\Assignment_1\obj\Debug\net8.0\Assignment_1.sourcelink.json
