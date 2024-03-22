@@ -1,4 +1,4 @@
-﻿var inflationAnalysis = new InflationAnalysis("Inflation.csv");
+﻿var inflationAnalysis = new InflationAnalysis("Book1.csv");
 
 var inflationRatesForYear = inflationAnalysis.GetInflationRatesForYear(2020);
 

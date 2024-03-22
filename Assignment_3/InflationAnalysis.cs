@@ -1,6 +1,6 @@
 class InflationAnalysis:Inflation
 {
-    public List<Inflation>? inflationData;
+    public List<Inflation> inflationData;
 
      public InflationAnalysis(string filePath)
     {
@@ -13,7 +13,7 @@ class InflationAnalysis:Inflation
         foreach(var line in File.ReadAllLines(filePath).Skip(1))
         {
         
-            var columns = line.Split('\t',',');
+            var columns = line.Split(',');
 
             // creating new inflation obj and setting its properties
             var inflation = new Inflation{
@@ -39,38 +39,38 @@ class InflationAnalysis:Inflation
         return inflationData.Where(item => item.Year == year).ToList();
     }
 
-    public Inflation GetYearWithHighestInflation(string country)
-    {
-        return inflationData
-            .Where(item => item.RegionalMember == country)
-            .OrderByDescending(item => item.InflationRate)
-            .FirstOrDefault();
-    }
+    // public Inflation GetYearWithHighestInflation(string country)
+    // {
+    //     return inflationData
+    //         .Where(item => item.RegionalMember == country)
+    //         .OrderByDescending(item => item.InflationRate)
+    //         .FirstOrDefault();
+    // }
 
-    public List<Inflation> GetTop10RegionsWithHighestInflation()
-    {
-        return inflationData
-            .OrderByDescending(item => item.InflationRate)
-            .Take(10)
-            .ToList();
-    }
+    // public List<Inflation> GetTop10RegionsWithHighestInflation()
+    // {
+    //     return inflationData
+    //         .OrderByDescending(item => item.InflationRate)
+    //         .Take(10)
+    //         .ToList();
+    // }
 
-    private bool IsSouthAsianCountry(string country)
-    {
-        if(country == null )
-        {
-            return false;
-        }
-        List<string> southAsianCountries = new List<string> { "Nepal", "India", "Pakistan", "Bangladesh", "Sri Lanka", "Bhutan", "Maldives" };
-        return southAsianCountries.Contains(country);
-    }
-    public List<Inflation> GetTop3SouthAsianCountriesWithLowestInflationForYear(int year)
-    {
-        return inflationData
-            .Where(item => item.Year == year && IsSouthAsianCountry(item.RegionalMember))
-            .OrderBy(item => item.InflationRate)
-            .Take(3)
-            .ToList();
-    }
+    // private bool IsSouthAsianCountry(string country)
+    // {
+    //     if(country == null )
+    //     {
+    //         return false;
+    //     }
+    //     List<string> southAsianCountries = new List<string> { "Nepal", "India", "Pakistan", "Bangladesh", "Sri Lanka", "Bhutan", "Maldives" };
+    //     return southAsianCountries.Contains(country);
+    // }
+    // public List<Inflation> GetTop3SouthAsianCountriesWithLowestInflationForYear(int year)
+    // {
+    //     return inflationData
+    //         .Where(item => item.Year == year && IsSouthAsianCountry(item.RegionalMember))
+    //         .OrderBy(item => item.InflationRate)
+    //         .Take(3)
+    //         .ToList();
+    // }
 
 }
