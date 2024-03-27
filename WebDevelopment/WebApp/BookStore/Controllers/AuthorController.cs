@@ -4,11 +4,11 @@ using BookStore.Data.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing.Internal;
 
-public class AuthorController:Controller
+public class AuthorController : Controller
 {
+    BookStoreDb db = new BookStoreDb();
     public IActionResult Index()
     {
-        BookStoreDb db = new BookStoreDb();
         List<Author> authors = db.Authors.ToList();
         return View(authors);
     }
@@ -22,8 +22,6 @@ public class AuthorController:Controller
     [HttpPost]
     public IActionResult Add(Author author)
     {
-        
-        BookStoreDb db = new BookStoreDb();
         db.Authors.Add(author);
         db.SaveChanges();
 
@@ -31,10 +29,10 @@ public class AuthorController:Controller
     }
 
 
-    public IActionResult Edit(int Id){
-        BookStoreDb db = new BookStoreDb();
+    public IActionResult Edit(int Id)
+    {
         Author? authors = db.Authors.Find(Id);
-        
+
         // View(authors)->helps to populate the form while editing
         return View(authors);
     }
@@ -42,7 +40,6 @@ public class AuthorController:Controller
     [HttpPost]
     public IActionResult Edit(Author author)
     {
-        BookStoreDb db = new BookStoreDb();
         db.Authors.Update(author);
         db.SaveChanges();
         return RedirectToAction("Index");
@@ -58,10 +55,10 @@ public class AuthorController:Controller
     //     return RedirectToAction("Index");
     // }
 
-     public IActionResult Delete(int Id){
-        BookStoreDb db = new BookStoreDb();
+    public IActionResult Delete(int Id)
+    {
         Author? authors = db.Authors.Find(Id);
-        
+
         // View(authors)->helps to populate the form while editing
         return View(authors);
     }
@@ -69,7 +66,6 @@ public class AuthorController:Controller
     [HttpPost]
     public IActionResult Delete(Author author)
     {
-        BookStoreDb db = new BookStoreDb();
         db.Authors.Remove(author);
         db.SaveChanges();
         return RedirectToAction("Index");
