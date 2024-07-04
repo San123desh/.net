@@ -1,8 +1,12 @@
-class InflationAnalysis:Inflation
+using System.Collections.Generic;
+using System;
+using System.IO;
+using System.Linq;
+class InflationAnalysis
 {
     public List<Inflation> inflationData;
 
-     public InflationAnalysis(string filePath)
+    public InflationAnalysis(string filePath)
     {
         inflationData = new List<Inflation>();
         ReadInflationData(filePath);
@@ -10,13 +14,14 @@ class InflationAnalysis:Inflation
     public List<Inflation> ReadInflationData(string filePath)
     {
 
-        foreach(var line in File.ReadAllLines(filePath).Skip(1))
+        foreach (var line in File.ReadAllLines(filePath).Skip(1))
         {
-        
+
             var columns = line.Split(',');
 
             // creating new inflation obj and setting its properties
-            var inflation = new Inflation{
+            var inflation = new Inflation
+            {
                 RegionalMember = columns[0],
                 Year = int.Parse(columns[1]),
                 InflationRate = double.Parse(columns[2]),
@@ -31,20 +36,23 @@ class InflationAnalysis:Inflation
         }
 
         //return list
-        return inflationData;  
+        return inflationData;
     }
 
-     public List<Inflation> GetInflationRatesForYear(int year)
+    public List<Inflation> GetInflationRatesForYear(int year)
     {
         return inflationData.Where(item => item.Year == year).ToList();
     }
 
     // public Inflation GetYearWithHighestInflation(string country)
     // {
+
+    //     // string country = "Nepal";
     //     return inflationData
-    //         .Where(item => item.RegionalMember == country)
+    //         .Where(item => item.RegionalMember == "Nepal")
     //         .OrderByDescending(item => item.InflationRate)
     //         .FirstOrDefault();
+
     // }
 
     // public List<Inflation> GetTop10RegionsWithHighestInflation()
