@@ -1,42 +1,44 @@
-using System.Collections.Generic;
 using System;
+using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
-using System.Linq;
-class InflationAnalysis
+using CsvHelper;
+using CsvHelper.Configuration;
+
+public class InflationAnalysis
 {
-    public List<Inflation> inflationData;
+    public List<Inflation> inflationData { get; private set; }
 
     public InflationAnalysis(string filePath)
     {
         inflationData = new List<Inflation>();
         ReadInflationData(filePath);
     }
-    public List<Inflation> ReadInflationData(string filePath)
+    public void ReadInflationData(string filePath)
     {
 
-        foreach (var line in File.ReadAllLines(filePath).Skip(1))
+        try
         {
-
-            var columns = line.Split(',');
-
-            // creating new inflation obj and setting its properties
-            var inflation = new Inflation
+            using (var reader = new StreamReader(filePath))
+            using (var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)
             {
-                RegionalMember = columns[0],
-                Year = int.Parse(columns[1]),
-                InflationRate = double.Parse(columns[2]),
-                UnitOfMeasurement = columns[3],
-                Subregion = columns[4],
-                CountryCode = columns[5]
-            };
-            // Add new inflation obj to the list  
-            //list populated
-            inflationData.Add(inflation);
-
+                HasHeaderRecord = true,
+                BadDataFound = null, // Ignore bad data lines
+                Delimiter = ",",
+                PrepareHeaderForMatch = args => args.Header.Trim().Replace(" ", "").Replace("\"", "")
+            }))
+            {
+                csv.Context.RegisterClassMap<InflationMap>();
+                inflationData = new List<Inflation>(csv.GetRecords<Inflation>());
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"An error occurred while reading the data: {ex.Message}");
         }
 
-        //return list
-        return inflationData;
+        // Return the list
+        // return inflationData;
     }
 
     public List<Inflation> GetInflationRatesForYear(int year)
