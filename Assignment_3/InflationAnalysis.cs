@@ -41,21 +41,19 @@ public class InflationAnalysis
         // return inflationData;
     }
 
-    public List<Inflation> GetInflationRatesForYear(int year)
-    {
-        return inflationData.Where(item => item.Year == year).ToList();
-    }
-
-    // public Inflation GetYearWithHighestInflation(string country)
+    // public List<Inflation> GetInflationRatesForYear(int year)
     // {
-
-    //     // string country = "Nepal";
-    //     return inflationData
-    //         .Where(item => item.RegionalMember == "Nepal")
-    //         .OrderByDescending(item => item.InflationRate)
-    //         .FirstOrDefault();
-
+    //     return inflationData.Where(item => item.Year == year).ToList();
     // }
+
+    public int? GetYearWithHighestInflation()
+    {
+
+        var nepalData = inflationData.Where(item => item.RegionalMember == "Nepal");
+        var highestInflation = nepalData.OrderByDescending(item => item.InflationRate).FirstOrDefault();
+        return highestInflation?.Year;
+
+    }
 
     // public List<Inflation> GetTop10RegionsWithHighestInflation()
     // {
