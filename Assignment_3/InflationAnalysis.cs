@@ -46,14 +46,14 @@ public class InflationAnalysis
     //     return inflationData.Where(item => item.Year == year).ToList();
     // }
 
-    public int? GetYearWithHighestInflation()
-    {
+    // public int? GetYearWithHighestInflation()
+    // {
 
-        var nepalData = inflationData.Where(item => item.RegionalMember == "Nepal");
-        var highestInflation = nepalData.OrderByDescending(item => item.InflationRate).FirstOrDefault();
-        return highestInflation?.Year;
+    //     var nepalData = inflationData.Where(item => item.RegionalMember == "Nepal");
+    //     var highestInflation = nepalData.OrderByDescending(item => item.InflationRate).FirstOrDefault();
+    //     return highestInflation?.Year;
 
-    }
+    // }
 
     // public List<Inflation> GetTop10RegionsWithHighestInflation()
     // {
@@ -63,22 +63,12 @@ public class InflationAnalysis
     //         .ToList();
     // }
 
-    // private bool IsSouthAsianCountry(string country)
-    // {
-    //     if(country == null )
-    //     {
-    //         return false;
-    //     }
-    //     List<string> southAsianCountries = new List<string> { "Nepal", "India", "Pakistan", "Bangladesh", "Sri Lanka", "Bhutan", "Maldives" };
-    //     return southAsianCountries.Contains(country);
-    // }
-    // public List<Inflation> GetTop3SouthAsianCountriesWithLowestInflationForYear(int year)
-    // {
-    //     return inflationData
-    //         .Where(item => item.Year == year && IsSouthAsianCountry(item.RegionalMember))
-    //         .OrderBy(item => item.InflationRate)
-    //         .Take(3)
-    //         .ToList();
-    // }
+    
+    public List<Inflation> GetTop3SouthAsianCountriesWithLowestInflationForYear(int year)
+    {
+        var southAsianCountries = new List<string> { "Afghanistan", "Bangladesh", "Bhutan", "India", "Maldives", "Nepal", "Pakistan", "Sri Lanka" };
+        var southAsianData = inflationData.Where(item => item.Year == year && southAsianCountries.Contains(item.RegionalMember));
+        return southAsianData.OrderBy(item => item.InflationRate).Take(3).ToList();
+    }
 
 }
